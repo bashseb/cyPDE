@@ -2,14 +2,13 @@
 from __future__ import absolute_import  # default since 2.7, exists since 2.5
 from __future__ import division
 import numpy as np
-#import sys
 #sys.path.insert(0,'basis/')
 # print sys.path
 # import module in same directory (bspline.so symlink )
 
 # for test
 import sys
-sys.path.append('.')
+sys.path.append('.') # bspeval, bspderiv
 #
 from .bspline import bspeval, bspderiv
 
