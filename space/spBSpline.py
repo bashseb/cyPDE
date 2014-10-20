@@ -295,8 +295,8 @@ class BspSpace2d(BspSpace):
 		super( BspSpace2d, self).__init__(knots, degree, msh)
 		#kself.spu
 
-		#if __debug__:
-		print "DBG: new Bspline surface space of degree {} for {} nodes in u direction and {} nodes in v direction".format(degree, self.qn[0].size, self.qn[1].size)
+		if __debug__:
+		    print "DBG: new Bspline surface space of degree {} for {} nodes in u direction and {} nodes in v direction".format(degree, self.qn[0].size, self.qn[1].size)
 		# Note: sp_bspline_1d_param is only capable of 1d nodes arrays
 		hessian=True
 		if np.any(degree) < 2:

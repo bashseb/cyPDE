@@ -73,7 +73,8 @@ def op_gradu_gradv(spu, spv, msh, coeff):
 	gradu = np.reshape(spu.shape_function_gradients, (spu.ncomp, -1, msh.nqn, spu.nsh_max, msh.nel), order ='F')
 	gradv = np.reshape(spv.shape_function_gradients, (spv.ncomp, -1, msh.nqn, spv.nsh_max, msh.nel), order ='F')
 	#print gradu.shape
-	print "gradient assembly, gradu==gradv: " + str(np.all(gradu==gradv))
+        if __debug__:
+	    print "gradient assembly, gradu==gradv: " + str(np.all(gradu==gradv))
 
 	ndir = gradu.shape[1] #?? 
 

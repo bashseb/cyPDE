@@ -4,7 +4,7 @@ from __future__ import division
 import numpy as np
 import sys
 # Normally, one would include the following dir in the PYTHONPATH environmental variable
-sys.path.append('/home/eiser/phd/src/py/cyPDEs-trunk') # load my own modules (give precedence to general modules, e.g. 'operator' from numpy)
+# sys.path.append('~/src/cyPDE') # load my own modules (give precedence to general modules, e.g. 'operator' from numpy)
 from nurbs import nrb
 
 # set line limit
